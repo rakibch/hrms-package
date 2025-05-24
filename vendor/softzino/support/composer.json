@@ -1,0 +1,42 @@
+{
+    "name": "softzino/support",
+    "description": "Support package for Softzino projects",
+    "authors": [
+        {
+            "name": "Foysal Ahmed",
+            "email": "foysal20x@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^11.0||^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Softzino\\Support\\": "src/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.8",
+        "laravel/pint": "^1.22",
+        "phpstan/phpstan": "^2.1",
+        "mockery/mockery": "^1.6"
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "lint": "vendor/bin/pint",
+        "analyse": "vendor/bin/phpstan analyse"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Softzino\\Support\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

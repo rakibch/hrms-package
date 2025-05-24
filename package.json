@@ -1,0 +1,55 @@
+{
+    "private": true,
+    "type": "module",
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "lint": "eslint resources/js --ext .js,.ts,.vue --ignore-path .gitignore --fix"
+    },
+    "devDependencies": {
+        "@inertiajs/vue3": "^2.0.3",
+        "@rushstack/eslint-patch": "^1.8.0",
+        "@tailwindcss/forms": "^0.5.3",
+        "@vitejs/plugin-vue": "^5.0.0",
+        "@vue/eslint-config-prettier": "^9.0.0",
+        "@vue/eslint-config-typescript": "^14.4.0",
+        "autoprefixer": "^10.4.12",
+        "axios": "^1.7.4",
+        "concurrently": "^9.0.1",
+        "eslint": "^9.20.1",
+        "eslint-plugin-vue": "^9.23.0",
+        "glob": "^11.0.1",
+        "laravel-vite-plugin": "^1.0",
+        "lru-cache": "^11.0.2",
+        "postcss": "^8.4.31",
+        "prettier": "^3.3.0",
+        "prettier-plugin-organize-imports": "^4.0.0",
+        "prettier-plugin-tailwindcss": "^0.6.5",
+        "rimraf": "^6.0.1",
+        "sass": "^1.82.0",
+        "tailwindcss": "^3.4.16",
+        "ts-loader": "^9.5.1",
+        "typescript": "^5.7.3",
+        "vite": "^6.1.0",
+        "vite-plugin-run": "^0.6.1",
+        "vue": "^3.4.0",
+        "vue-tsc": "^2.2.2"
+    },
+    "dependencies": {
+        "@fontsource/inter": "^5.1.0",
+        "@he-tree/vue": "^2.9.1",
+        "@headlessui/vue": "^1.7.23",
+        "@heroicons/vue": "^2.1.5",
+        "@softzino/st-uikit": "^0.0.13",
+        "@tabler/icons-vue": "^3.21.0",
+        "@vueuse/core": "^11.2.0",
+        "floating-vue": "^5.2.2",
+        "heroicons": "^2.1.5",
+        "laravel-precognition-vue-inertia": "^0.6.1",
+        "leaflet": "^1.9.4",
+        "vue-toast-notification": "^3.1.3"
+    }
+}

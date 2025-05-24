@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .permission-column {
+        @apply w-[100px] flex justify-center;
+    }
+    .table-header {
+        @apply bg-gray-50 normal-case text-sm font-semibold text-mirage-950;
+    }
+    .sidebar-layout {
+        @apply transition-all duration-200 ease-in-out py-9;
+    }
+}
+
+@layer base {
+    /* Chrome, Safari, Edge, Opera */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+}

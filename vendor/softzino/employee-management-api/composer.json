@@ -1,0 +1,59 @@
+{
+    "name": "softzino/employee-management-api",
+    "description": "API wrapper for the Employment Management Core Package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Softzino\\EmployeeManagementApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Softzino\\EmploymentManagementApi\\Tests\\": "tests/",
+            "Workbench\\App\\": "workbench/app/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
+        "softzino/employee-management-laravel": "dev-dev"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.14",
+        "nunomaduro/collision": "^8.1.1||^7.10.0",
+        "larastan/larastan": "^2.9",
+        "orchestra/testbench": "^9.0.0||^8.22.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-arch": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0",
+        "phpstan/extension-installer": "^1.3",
+        "phpstan/phpstan-deprecation-rules": "^1.1",
+        "phpstan/phpstan-phpunit": "^1.3"
+    },
+    "scripts": {
+        "test": "vendor/bin/pest"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Softzino\\EmployeeManagementApi\\Providers\\EmploymentApiServiceProvider"
+            ]
+        }
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:softzino/employee-management-laravel.git"
+        }
+    ]
+}
