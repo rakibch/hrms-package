@@ -79,9 +79,6 @@
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
         },
-        "github-oauth": {
-            "github.com": "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"
-        }
     },
     "repositories": [
         {
